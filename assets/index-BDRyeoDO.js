@@ -61,4 +61,4 @@ ${n.id===1&&e?"Card-act":""}
                    h-[3rem] w-[10rem]`,children:n.title})})]}))})]})})}function Hv(){return w.jsx("footer",{className:`bg-slate-500\r
      relative h-[5rem]   w-[100%] `,children:w.jsx("div",{className:`px-2 pb-8\r
          pt-2 h-[2rem] content-center w-[10rem]  fixed top-[91.333vb] right-[8vb] \r
-         `,children:w.jsx("h3",{className:"text-[1rem] font-[poppins] font-semibold bg-[gold] transition-colors duration-300 cursor-pointer hover:bg-black hover:text-white py-2  tracking-widest w-48	uppercase inline-flex px-4",children:w.jsx("a",{href:"#",children:"Enquire Now"})})})})}yf(document.getElementById("root")).render(w.jsx(re.StrictMode,{children:w.jsx(Iv,{})}));
+         `,children:w.jsx("h3",{className:"text-[1rem] font-[poppins] font-semibold bg-[gold] transition-colors duration-300 cursor-pointer hover:bg-black hover:text-white py-2  tracking-widest w-48	uppercase inline-flex px-4",children:w.jsx("a",{href:"/",children:"Enquire Now"})})})})}yf(document.getElementById("root")).render(w.jsx(re.StrictMode,{children:w.jsx(Iv,{})}));
