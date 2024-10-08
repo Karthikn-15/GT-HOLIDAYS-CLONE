@@ -9,8 +9,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "build": "vite build",
-    "preview": "vite preview",
-    "gh-clear": "gh-pages-clean"
+    "preview": "vite preview"
   },
   "dependencies": {
     "dynamic": "^4.2.2",
