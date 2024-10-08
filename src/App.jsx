@@ -149,7 +149,7 @@ function Footer() {
          pt-2 h-[2rem] content-center w-[10rem]  fixed top-[91.333vb] right-[8vb] 
          ">
         <h3 className="text-[1rem] font-[poppins] font-semibold bg-[gold] transition-colors duration-300 cursor-pointer hover:bg-black hover:text-white py-2  tracking-widest w-48	uppercase inline-flex px-4">
-          <a href="#">Enquire Now</a>
+          <a href="/">Enquire Now</a>
         </h3>
       </div>
     </footer>
