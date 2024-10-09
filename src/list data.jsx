@@ -9,13 +9,15 @@ import Menu from "./images/menu.jpg";
 import Logo from "./images/LOGO.png";
 import Abroad from "./images/Abroad.png";
 import Traveler from "./images/Traveler.png";
-import Experience from "./images/Experience.png";
+import Experience from "./images/Experiences.png";
+import AboutUs from "./images/GT-banner.jpeg";
 
 // EXPORTING THE ESSENTIALS FOR TOBBAR & MENUBAR //
 
 export const DropI = Drop;
 export const MenuIcon = Menu;
 export const logo = Logo;
+export const Banner = AboutUs;
 
 // DATA FOR MENUBAR LIST & SIDEBAR//
 
@@ -209,7 +211,7 @@ export const Trip = [
     src: Abroad,
     cap: "50,000+ Abroad Trips",
     title:
-      "For the last decade, GT Holidays have organized more than 50,000 international itineraries.",
+      "For the last decade, SK Holidays have organized more than 50,000 international itineraries.",
   },
 
   {
@@ -224,6 +226,6 @@ export const Trip = [
     src: Traveler,
     cap: "Happy Travellers",
     title:
-      "GT Holidays holds record of great customer satisfaction and all customers are retained with us.",
+      "SK Holidays holds record of great customer satisfaction and all customers are retained with us.",
   },
 ];

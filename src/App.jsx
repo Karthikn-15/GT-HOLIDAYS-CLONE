@@ -4,6 +4,7 @@ import {MenuBar} from "./Components/header";
 import Video from "./bg video/BG VIDEO.mp4";
 import VideoMob from "./bg video/BG MOBILE.mp4";
 import {packages, Trip} from "./list data";
+import {Banner} from "./list data";
 
 export default function App() {
   const [list, SetList] = useState(null);
@@ -12,26 +13,7 @@ export default function App() {
       <Header list={list} SetList={SetList} />
       <Home />
       <PackageSection />
-
-      <div className="relative pt-[10rem] px-20 break-words pb-[25rem]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odio
-        itaque veniam nisi, consequatur distinctio quam hic voluptatem qui unde
-        eveniet, iste ex quibusdam esse deleniti consequuntur sed dolore
-        sapiente. Atque amet quidem inventore, nisi sunt natus perspiciatis a ab
-        ipsam, eius est pariatur, ducimus laudantium voluptatem deserunt dolorem
-        nobis quod quos molestias itaque odit impedit perferendis. Deserunt,
-        ipsum velit! Sapiente, soluta quas! Quisquam eveniet repudiandae
-        expedita doloribus, laborum provident maiores voluptatum tenetur debitis
-        ipsum libero quae! Consequuntur mollitia laboriosam expedita nesciunt
-        eligendi voluptate similique! Architecto eius nulla voluptate impedit.
-        Dolores ipsam accusamus placeat assumenda omnis hic consequatur iure
-        amet quo velit impedit, eveniet ad illo, nesciunt harum ex laboriosam
-        eum modi soluta doloremque! Quibusdam eligendi ea obcaecati ratione
-        facere. At reiciendis repellat optio obcaecati doloremque, dicta
-        voluptatum itaque iure ad veritatis minus consequatur est! Dolor labore,
-        temporibus laboriosam aliquid sit neque quas harum facilis consectetur,
-        blanditiis commodi
-      </div>
+      <Aboutus />
       <Footer />
     </>
   );
@@ -132,7 +114,7 @@ function PackageSection() {
   return (
     <div>
       <div
-        className="relative inset-0 h-[70rem] mt-12 md:h-[40rem] xlg:h-[50rem] xxl:h-[65rem]    "
+        className="relative inset-0 h-[70rem] mt-14 md:h-[40rem] xlg:h-[50rem] xxl:h-[65rem]    "
         id="packages">
         <div
           className="pt-12 md:pt-16
@@ -152,7 +134,7 @@ function PackageSection() {
 }
 function GuideTips() {
   return (
-    <div className="grid grid-cols-1    xlll:my-[30rem]  xxl:grid-cols-3  gap-3">
+    <div className="grid grid-cols-1 mx-5 mt-10 xlg:mx-10 xlll:my-[30rem]  xxl:grid-cols-3  gap-3">
       {Trip.map((i) => (
         <div className="  p-10 content-center break-words  shadow-xl ">
           <div className="flex flex-row justify-center">
@@ -169,7 +151,34 @@ function GuideTips() {
     </div>
   );
 }
-
+function Aboutus() {
+  return (
+    <div className="mt-[7rem]">
+      <div className="mx-5">
+        <img className src={Banner} alt="banner" />
+      </div>
+      <div className="relative pt-[10rem] px-20 break-words pb-[25rem]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odio
+        itaque veniam nisi, consequatur distinctio quam hic voluptatem qui unde
+        eveniet, iste ex quibusdam esse deleniti consequuntur sed dolore
+        sapiente. Atque amet quidem inventore, nisi sunt natus perspiciatis a ab
+        ipsam, eius est pariatur, ducimus laudantium voluptatem deserunt dolorem
+        nobis quod quos molestias itaque odit impedit perferendis. Deserunt,
+        ipsum velit! Sapiente, soluta quas! Quisquam eveniet repudiandae
+        expedita doloribus, laborum provident maiores voluptatum tenetur debitis
+        ipsum libero quae! Consequuntur mollitia laboriosam expedita nesciunt
+        eligendi voluptate similique! Architecto eius nulla voluptate impedit.
+        Dolores ipsam accusamus placeat assumenda omnis hic consequatur iure
+        amet quo velit impedit, eveniet ad illo, nesciunt harum ex laboriosam
+        eum modi soluta doloremque! Quibusdam eligendi ea obcaecati ratione
+        facere. At reiciendis repellat optio obcaecati doloremque, dicta
+        voluptatum itaque iure ad veritatis minus consequatur est! Dolor labore,
+        temporibus laboriosam aliquid sit neque quas harum facilis consectetur,
+        blanditiis commodi
+      </div>
+    </div>
+  );
+}
 function Footer() {
   return (
     <footer
