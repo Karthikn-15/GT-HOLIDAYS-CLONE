@@ -119,7 +119,7 @@ ${i.id === 1 && hover ? "Card-act" : ""}
               </div>
               <div className="absolute inset-1 content-center  flex flex-row justify-center break-words  cursor-pointer">
                 <button
-                  className={`text-[0.5rem] md:text-[0.5rem] xlg:text-[1.2rem] p-0 font-mono h-[1.5rem] w-[4.5rem] xlg:h-[2rem] xlg:w-[8rem]
+                  className={`text-[0.5rem] md:text-[0.8rem] lrg:text-[1rem] xlg:text-[1.2rem] p-0 font-mono h-[1rem] lrg:h-[3rem] w-[4.5rem] xlg:h-[2rem] xlg:w-[8rem]
 
                   text-black  ${i.id === 1 ? "mt-[5rem] xlg:mt-[10rem]" : ""} 
                   ${i.id === 2 ? "mt-[5rem] xlg:mt-[10rem]" : ""}
@@ -127,7 +127,7 @@ ${i.id === 1 && hover ? "Card-act" : ""}
                     i.id === 4 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
                   }  ${
                     i.id === 5 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
-                  }  hover:text-white bg-yellow-400
+                  }  hover:text-white  bg-yellow-400 bg-opacity-65
                    h-[3rem] w-[10rem]`}>
                   {i.title}
                 </button>

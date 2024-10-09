@@ -113,7 +113,7 @@ export function MenuBar({list, SetList}) {
   return (
     <>
       <div
-        className={` w-full p-5 pt-0 pb-0 flex menuBar max-xxl:gap-64 max-xl:gap-20  max-md:gap-5  h-24  bg-white ${
+        className={` w-full p-5 pt-0 pb-0 flex menuBar max-xxl:gap-64 max-xl:gap-20  border-[gold] border-b-[1px] max-md:gap-5  h-24  bg-white ${
           TopBar ? "" : "fixed top-0"
         }`}>
         <button className=" menu-i hidden max-xxl:inline  ">

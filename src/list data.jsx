@@ -3,7 +3,7 @@ import edu from "./images/edu.png";
 import india from "./images/kerala.png";
 import europe from "./images/europe.png";
 import inter from "./images/inter.png";
-import honeymoon from "./images/HO.png";
+import honeymoon from "./images/honeymoon.png";
 import Drop from "./images/DropDown.png";
 import Menu from "./images/menu.jpg";
 import Logo from "./images/LOGO.png";
