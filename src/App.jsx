@@ -3,7 +3,7 @@ import {TopBar} from "./Components/header";
 import {MenuBar} from "./Components/header";
 import Video from "./bg video/BG VIDEO.mp4";
 import VideoMob from "./bg video/BG MOBILE.mp4";
-import {packages} from "./list data";
+import {packages, Trip} from "./list data";
 
 export default function App() {
   const [list, SetList] = useState(null);
@@ -11,7 +11,8 @@ export default function App() {
     <>
       <Header list={list} SetList={SetList} />
       <Home />
-      <Packages />
+      <PackageSection />
+
       <div className="relative pt-[10rem] px-20 break-words pb-[25rem]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, odio
         itaque veniam nisi, consequatur distinctio quam hic voluptatem qui unde
@@ -69,76 +70,104 @@ function Home() {
     </section>
   );
 }
-function Packages() {
-  const [hover, setHover] = useState(false);
+function Trips({hover, setHover}) {
   return (
-    <div className="relative inset-0 h-[80rem]  " id="packages">
-      <div
-        className="pt-12 md:pt-16
-          px-[2rem]  xxl:pl-[7rem] pr-[2rem] xxl:pr-[7rem] 
-           font-serif text-[2rem] max-w-max break-words">
-        <h2
-          className="pb-2 text-[#ffcc00] pl-6
-         font-serif">
-          Popular packages
-        </h2>
+    <div
+      className="grid grid-cols-1
+     gap-4 xl:gap-7 
+   md:grid-cols-3 md:grid-rows-1 lg:grid-cols-4  ">
+      {packages.map((i) => (
         <div
-          className="grid grid-cols-1
-           gap-4 xl:gap-7 
-         md:grid-cols-3 md:grid-rows-1 lg:grid-cols-4  ">
-          {packages.map((i) => (
-            <div
-              onMouseEnter={() => setHover(false)}
-              onMouseLeave={() => setHover(true)}
-              i={i}
-              className={`  ${i.id === 1 ? "md:col-span-2" : ""}
+          onMouseEnter={() => setHover(false)}
+          onMouseLeave={() => setHover(true)}
+          i={i}
+          className={`  ${i.id === 1 ? "md:col-span-2" : ""}
 ${i.id === 1 && hover ? "Card-act" : ""}
 
-                   hover:text-white
-                opacity-70 hover:opacity-100
-                relative
-            transition-transform duration-300 transform hover:scale-105  `}>
-              <img
-                src={i.src}
-                key={i.id}
-                alt={i.name}
-                className={`  h-[100%] w-full Border  ${
-                  i.id === 3 ? "md:h-[165%]" : ""
-                } ${i.id === 4 ? "md:h-[165%]" : ""}
-                  ${i.id === 5 ? "md:h-[165%]" : ""}
-                `}
-              />
-              <div className="absolute inset-1 content-center  flex flex-row justify-center  ">
-                <h2
-                  className="text-[1.5rem] md:text-[1.2rem] xlg:text-[2rem]
-                  text-black 
-                    pl-3
-                     pt-4  ">
-                  {i.name}
-                </h2>
-              </div>
-              <div className="absolute inset-1 content-center  flex flex-row justify-center break-words  cursor-pointer">
-                <button
-                  className={`text-[0.5rem] md:text-[0.8rem] lrg:text-[1rem] xlg:text-[1.2rem] p-0 font-mono h-[1rem] lrg:h-[3rem] w-[4.5rem] xlg:h-[2rem] xlg:w-[8rem]
+             hover:text-white
+          opacity-70 hover:opacity-100
+          relative
+      transition-transform duration-300 transform hover:scale-105  `}>
+          <img
+            src={i.src}
+            key={i.id}
+            alt={i.name}
+            className={`  h-[100%] w-full Border  ${
+              i.id === 3 ? "md:h-[165%]" : ""
+            } ${i.id === 4 ? "md:h-[165%]" : ""}
+            ${i.id === 5 ? "md:h-[165%]" : ""}
+          `}
+          />
+          <div className="absolute inset-1 content-center  flex flex-row justify-center  ">
+            <h2
+              className="text-[1.5rem] md:text-[1.2rem] xlg:text-[2rem]
+            text-black 
+              pl-3
+               pt-4  ">
+              {i.name}
+            </h2>
+          </div>
+          <div className="absolute inset-1 content-center  flex flex-row justify-center break-words  cursor-pointer">
+            <button
+              className={`text-[0.5rem] md:text-[0.8rem] lrg:text-[1rem] xlg:text-[1.2rem] p-0 font-mono h-[1rem] lrg:h-[3rem] w-[4.5rem] xlg:h-[2rem] xlg:w-[8rem]
 
-                  text-black  ${i.id === 1 ? "mt-[5rem] xlg:mt-[10rem]" : ""} 
-                  ${i.id === 2 ? "mt-[5rem] xlg:mt-[10rem]" : ""}
-                  ${i.id === 3 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""}  ${
-                    i.id === 4 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
-                  }  ${
-                    i.id === 5 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
-                  }  hover:text-white  bg-yellow-400 bg-opacity-65
-                   h-[3rem] w-[10rem]`}>
-                  {i.title}
-                </button>
-              </div>
-            </div>
-          ))}
+            text-black  ${i.id === 1 ? "mt-[5rem] xlg:mt-[10rem]" : ""} 
+            ${i.id === 2 ? "mt-[5rem] xlg:mt-[10rem]" : ""}
+            ${i.id === 3 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""}  ${
+                i.id === 4 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
+              }  ${
+                i.id === 5 ? "mt-[5rem] xlg:mt-[8rem] pl-0" : ""
+              }  hover:text-white  bg-yellow-400 bg-opacity-65
+             h-[3rem] w-[10rem]`}>
+              {i.title}
+            </button>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 }
+function PackageSection() {
+  const [hover, setHover] = useState(false);
+  return (
+    <div>
+      <div
+        className="relative inset-0 h-[70rem] md:h-[40rem] xlg:h-[50rem] xxl:h-[65rem]    "
+        id="packages">
+        <div
+          className="pt-12 md:pt-16
+        px-[2rem]  xxl:pl-[7rem] pr-[2rem] xxl:pr-[7rem] 
+        font-serif text-[2rem] max-w-max break-words ">
+          <h2
+            className="pb-2 text-[#ffcc00] pl-6
+          font-serif">
+            Popular packages
+          </h2>
+          <Trips hover={hover} setHover={setHover} />
+        </div>
+      </div>
+      <GuideTips />
+    </div>
+  );
+}
+function GuideTips() {
+  return (
+    <div className="grid grid-cols-1  xlll:my-[30rem]  xxl:grid-cols-3  gap-3">
+      {Trip.map((i) => (
+        <div className=" m-10 p-10 content-center break-words  shadow-xl ">
+          <div className="flex flex-row justify-center">
+            <img src={i.src} alt={i.id} className="size-24  " />
+          </div>
+          <h3 className="px-[5vb] ">{i.cap}</h3>
+          <div className="flex flex-row justify-items-stretch">
+            <p>{i.title}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
 function Footer() {
   return (
     <footer

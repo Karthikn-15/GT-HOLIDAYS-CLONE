@@ -12,6 +12,7 @@ export default {
       xl: "800px",
       xxl: "1100px",
       xxxl: "1400px",
+      xlll: "1800px",
       full: "5500px",
     },
     letterSpacing: {

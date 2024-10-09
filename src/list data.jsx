@@ -7,6 +7,9 @@ import honeymoon from "./images/honeymoon.png";
 import Drop from "./images/DropDown.png";
 import Menu from "./images/menu.jpg";
 import Logo from "./images/LOGO.png";
+import Abroad from "./images/Abroad.png";
+import Traveler from "./images/Traveler.png";
+import Experience from "./images/Experience.png";
 
 // EXPORTING THE ESSENTIALS FOR TOBBAR & MENUBAR //
 
@@ -198,5 +201,29 @@ export const packages = [
     title: "15 Tours",
     src: edu,
     link: "#",
+  },
+];
+export const Trip = [
+  {
+    id: 1,
+    src: Abroad,
+    cap: "50,000+ Abroad Trips",
+    title:
+      "For the last decade, GT Holidays have organized more than 50,000 international itineraries.",
+  },
+
+  {
+    id: 2,
+    src: Experience,
+    cap: "Handcrafted Experiences",
+    title:
+      "Each and every itinerary is customized according to the taste of the customers.",
+  },
+  {
+    id: 3,
+    src: Traveler,
+    cap: "Happy Travellers",
+    title:
+      "GT Holidays holds record of great customer satisfaction and all customers are retained with us.",
   },
 ];
