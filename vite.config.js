@@ -5,7 +5,7 @@ import eslint from "vite-plugin-eslint";
 
 export default defineConfig({
   plugins: [react(), eslint()],
-  base: "/GT-Holidays-clone/",
+  base: "/GT-Holidays-Clone/",
   css: {
     postcss: {
       plugins: [tailwindcss()],
