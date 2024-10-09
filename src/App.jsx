@@ -132,7 +132,7 @@ function PackageSection() {
   return (
     <div>
       <div
-        className="relative inset-0 h-[70rem] md:h-[40rem] xlg:h-[50rem] xxl:h-[65rem]    "
+        className="relative inset-0 h-[70rem] mt-12 md:h-[40rem] xlg:h-[50rem] xxl:h-[65rem]    "
         id="packages">
         <div
           className="pt-12 md:pt-16
@@ -152,14 +152,16 @@ function PackageSection() {
 }
 function GuideTips() {
   return (
-    <div className="grid grid-cols-1  xlll:my-[30rem]  xxl:grid-cols-3  gap-3">
+    <div className="grid grid-cols-1    xlll:my-[30rem]  xxl:grid-cols-3  gap-3">
       {Trip.map((i) => (
-        <div className=" m-10 p-10 content-center break-words  shadow-xl ">
+        <div className="  p-10 content-center break-words  shadow-xl ">
           <div className="flex flex-row justify-center">
             <img src={i.src} alt={i.id} className="size-24  " />
           </div>
-          <h3 className="px-[5vb] ">{i.cap}</h3>
-          <div className="flex flex-row justify-items-stretch">
+          <div className="flex flex-row justify-center content-center">
+            <h3 className="px-[5vb] ">{i.cap}</h3>
+          </div>
+          <div className="flex flex-row justify-center content-center">
             <p>{i.title}</p>
           </div>
         </div>
