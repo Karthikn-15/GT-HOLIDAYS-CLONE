@@ -163,18 +163,18 @@ function Aboutus() {
         eveniet, iste ex quibusdam esse deleniti consequuntur sed dolore
         sapiente. Atque amet quidem inventore, nisi sunt natus perspiciatis a ab
         ipsam, eius est pariatur, ducimus laudantium voluptatem deserunt dolorem
-        nobis quod quos molestias itaque odit impedit perferendis. Deserunt,
-        ipsum velit! Sapiente, soluta quas! Quisquam eveniet repudiandae
-        expedita doloribus, laborum provident maiores voluptatum tenetur debitis
-        ipsum libero quae! Consequuntur mollitia laboriosam expedita nesciunt
-        eligendi voluptate similique! Architecto eius nulla voluptate impedit.
-        Dolores ipsam accusamus placeat assumenda omnis hic consequatur iure
-        amet quo velit impedit, eveniet ad illo, nesciunt harum ex laboriosam
-        eum modi soluta doloremque! Quibusdam eligendi ea obcaecati ratione
-        facere. At reiciendis repellat optio obcaecati doloremque, dicta
-        voluptatum itaque iure ad veritatis minus consequatur est! Dolor labore,
-        temporibus laboriosam aliquid sit neque quas harum facilis consectetur,
-        blanditiis commodi
+        nobis quod quos molestias itaque odit impedit perfndis. Deserunt, ipsum
+        velit! Sapiente, soluta quas! Quisquam eveniet repudiandae expedita
+        doloribus, laborum provident maiores voluptatum tenetur debitis ipsum
+        libero quae! Consequuntur mollitia laboriosam expedita nesciunt eligendi
+        voluptate similique! Architecto eius nulla voluptate impedit. Dolores
+        ipsam accusamus placeat assumenda omnis hic consequatur iure amet quo
+        velit impedit, eveniet ad illo, nesciunt harum ex laboriosam eum modi
+        soluta doloremque! Quibusdam eligendi ea obcaecati ratione facere. At
+        reiciendis repellat optio obcaecati doloremque, dicta voluptatum itaque
+        iure ad veritatis minus consequatur est! Dolor labore, temporibus
+        laboriosam aliquid sit neque quas harum facilis consectetur, blanditiis
+        commodi
       </div>
     </div>
   );
