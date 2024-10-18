@@ -10,7 +10,7 @@ import Logo from "./images/LOGO.png";
 import Abroad from "./images/Abroad.png";
 import Traveler from "./images/Traveler.png";
 import Experience from "./images/Experiences.png";
-import AboutUs from "./images/GT-banner.jpeg";
+import AboutUs from "./images/GT-banner.png";
 
 // EXPORTING THE ESSENTIALS FOR TOBBAR & MENUBAR //
 
